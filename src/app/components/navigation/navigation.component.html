@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <a href="https://x2mobile.net" target="_blank" id="logo-wrapper">
+    <img src="logo.svg" alt="Logo" class="logo"/>
+    <div id="company-brand" appHoverText="Mobile">Mobile</div>
+  </a>
+
+
+  <nav>
+    @for (route of routes; track route.path; let idx = $index ) {
+      <a [routerLink]="route.path" class="link" [routerLinkActive]="'active'">
+        <div class="name">{{ route.name }}</div>
+      </a>
+    }
+  </nav>
+
+
+</div>

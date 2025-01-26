@@ -1,0 +1,38 @@
+<app-description>
+  <div class="objective"><b>Objective:</b> Create a reactive form with validation and display error messages.</div>
+  <div class="instructions">
+    <p>1. Use the existing html template.</p>
+    <p>2. Create a form with fields for name, email, and password.</p>
+    <p>2. Add validation for required fields, email format, and minimum password length.</p>
+    <p>3. Display error messages for each field when validation fails and hide them when validation passes.</p>
+    <p>4. Disable the Submit button while the form is invalid.</p>
+  </div>
+</app-description>
+
+<div class="challenge">
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <div class="form-group">
+      <label class="form-label" for="name" >Name</label>
+      <input type="text" id="name">
+      <div class="error">Name is required</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="email" >Email</label>
+      <input type="email" id="email">
+      <div class="error">Invalid email format</div>
+      <div class="error">Email is required</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="password" >Password</label>
+      <input type="password" id="password">
+      <div class="error">Password is required</div>
+      <div class="error">Password must be at least 6 characters</div>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+
+  <div class="results">
+    <code>{{ results | prettyJson }}</code>
+  </div>
+
+</div>

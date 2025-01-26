@@ -1,0 +1,44 @@
+:host {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 40px;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr;
+  }
+
+  .challenge {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+
+    .result {
+      width: 260px;
+      height: 306px;
+
+      &.default {
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.5803921569);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        -webkit-backdrop-filter: blur(34px);
+        backdrop-filter: blur(30px);
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #ffffff94;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        -webkit-backdrop-filter: blur(34px);
+        backdrop-filter: blur(30px);
+        align-items: center;
+
+      }
+    }
+
+  }
+}

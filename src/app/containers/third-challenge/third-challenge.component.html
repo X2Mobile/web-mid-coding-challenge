@@ -1,0 +1,22 @@
+<app-description>
+  <div class="objective"><b>Objective:</b> Identify and fix the bug that prevents the jumping animation and the counter from stopping.</div>
+  <div class="instructions">
+    <p>1. Clicking the Stop button does not halt the animation or the counter.</p>
+    <p>2. Determine a method to stop both the animation and the counter.</p>
+
+  </div>
+</app-description>
+
+<div class="challenge">
+  <div class="result">
+    <div class="dot" [class.jump]="isJumping"></div>
+  </div>
+  <div class="toggle">
+    <button (click)="stop()">
+     Stop
+    </button>
+  </div>
+  <div class="result">
+    <div class="counter">{{counter}}</div>
+  </div>
+</div>

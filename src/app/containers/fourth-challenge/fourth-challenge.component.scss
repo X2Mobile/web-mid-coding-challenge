@@ -1,0 +1,115 @@
+:host {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 40px;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr;
+  }
+
+  $color-active: #001a40;
+  $color-error: #e40101;
+
+  .challenge {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 40px;
+
+    .results {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #ffffff94;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      -webkit-backdrop-filter: blur(34px);
+      backdrop-filter: blur(30px);
+
+      code {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      button {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .form-group {
+        color: #333333;
+        display: flex;
+        flex-direction: column;
+
+        .error {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 16px;
+          color: $color-error;
+          margin-top: 4px;
+          text-align: left;
+          min-height: 10px;
+        }
+
+        .form-label {
+          margin-bottom: 4px;
+          margin-left: 12px;
+          font-weight: 600;
+          font-size: 13px;
+        }
+
+        input {
+          background-color: transparent;
+          border-radius: 5px;
+          border: 2px solid #d9d9d9;
+          color: #333333;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 20px;
+          height: 40px;
+          width: 100%;
+          z-index: 9;
+          padding: 0 10px;
+          box-sizing: border-box;
+
+
+          &:focus {
+            border-color: #3f51b5;
+            outline: 0;
+            border-radius: 5px;
+
+            &:invalid {
+              border-color: #3f51b5 !important;
+              color: #333333 !important;
+              background-color: transparent !important;
+            }
+
+            &.error {
+              background: rgba(228, 1, 1, 0.15) !important;
+              border-color: $color-error !important;
+            }
+          }
+
+
+          &.error, &:invalid {
+            background: rgba(228, 1, 1, 0.15) !important;
+            border-color: $color-error !important;
+          }
+
+
+        }
+      }
+
+    }
+  }
+
+
+}
