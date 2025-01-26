@@ -1,6 +1,13 @@
-# CodingChallenges
+# Coding Challenges
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.4.
+This repository contains a collection of coding challenges related to Angular.
+
+## Requirements
+Node.js and npm are required to run this project. To install Node.js, visit the [Node.js website](https://nodejs.org/).
+Recommended versions are:
+- Node.js 22.13.1
+- Node.js 22.0.0
+- npm >=8.0.0
 
 ## Development server
 
