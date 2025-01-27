@@ -15,6 +15,13 @@ Recommended versions are:
 - Node.js 22.0.0
 - npm >=8.0.0
 
+## Installation
+Install the project dependencies by running:
+
+```bash
+npm install
+```
+
 ## Development server
 
 To start a local development server, run:
