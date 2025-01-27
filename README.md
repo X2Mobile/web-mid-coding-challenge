@@ -3,6 +3,12 @@
 This repository contains a collection of coding challenges related to Angular.
 
 ## Requirements
+Angular CLI is required to run this project. To install Angular CLI, run:
+
+```bash
+npm install -g @angular/cli
+```
+
 Node.js and npm are required to run this project. To install Node.js, visit the [Node.js website](https://nodejs.org/).
 Recommended versions are:
 - Node.js 22.13.1
